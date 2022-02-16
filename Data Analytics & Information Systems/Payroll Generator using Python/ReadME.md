@@ -1,4 +1,4 @@
-- To design a python program to process departmental payroll. The 
+To design a python program to process departmental payroll. The 
 program will read payroll-related data from a CSV-formatted input file (payroll_input.csv) and 
 write the output to the console as well as to a CSV-formatted output file named
 (payroll_output.csv).
@@ -16,30 +16,30 @@ there are no more employee records left to be read and processed. Thus, 'EOF' in
 input file is used to indicate the end of input file or no more records to process. 
 - 3. For each hourly employee included in the input CSV data file:
 
--  a. Normal or regular weekly hours cannot exceed 40.00 hours. Any hours over 40.00
+-   Normal or regular weekly hours cannot exceed 40.00 hours. Any hours over 40.00
 are to be paid at an overtime pay rate. The multiplier for overtime pay is 1.5, 
 meaning 1.5 times the regular hourly pay rate. 
--  b. An employee is paid at regular hourly pay rate when the employee has worked less 
+-   An employee is paid at regular hourly pay rate when the employee has worked less 
 than or equal to 40.00 hours a week (regular weekly hours). Maximum regular 
 hours per week is to be defined as a constant of 40.00.
--  c. Regular Gross Pay = regular weekly hours worked * regular hourly pay rate 
--  d. When an employee has worked overtime (weekly hours worked > maximum regular 
+-   Regular Gross Pay = regular weekly hours worked * regular hourly pay rate 
+-   When an employee has worked overtime (weekly hours worked > maximum regular 
 hours), the employee is paid at the regular hourly pay rate for the first 40.00 hours. 
 Overtime is paid at 1.5 times the regular hourly pay rate per hour of overtime. 
 Overtime hours are hours worked in excess of maximum regular hours.
--  e. Overtime Gross Pay = overtime hours worked * overtime multiplier * regular hourly 
+-   Overtime Gross Pay = overtime hours worked * overtime multiplier * regular hourly 
 rate
--  f. Total Gross Pay is the sum of Regular Gross Pay and Overtime Gross Pay. 
--  g. Tax to withhold = Total Gross Pay * (Tax Rate/100), where Tax Rate % is 
+-   Total Gross Pay is the sum of Regular Gross Pay and Overtime Gross Pay. 
+-   Tax to withhold = Total Gross Pay * (Tax Rate/100), where Tax Rate % is 
 determined by the following table (Note: tax rates and thresholds for each tax 
 bracket must be declared as constants e.g. TAX_THRESHOLD_LOW = 12.00, 
 TAX_RATE_BELOW_12 = 10, etc.)
--  h. Deduction to withhold = Total Gross Pay * (Deduction Rate/100), where the 
+-   Deduction to withhold = Total Gross Pay * (Deduction Rate/100), where the 
 Deduction Rate % is determined by the following rule. (Deduction threshold and 
 Deduction Rates must be declared as constants, e.g. DEDUCTION_THRESHOLD
 = 800.00, DEDUCTION_RATE_LOW = 2, DEDUCTION_RATE_HIGH = 5
--  i. Net pay = Total Gross Pay – Tax to Withhold – Deduction to withhold
--  j. Display results on console in the following sequence. All data must be properly 
+-   Net pay = Total Gross Pay – Tax to Withhold – Deduction to withhold
+-   Display results on console in the following sequence. All data must be properly 
 formatted. All currency values must be displayed with $ sign and to 2 decimal 
 places. All floating point, non-currency, numeric values must be rounded to 2 
 decimal places. All numeric values must be aligned on the decimal point.
