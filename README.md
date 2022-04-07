@@ -1,4 +1,4 @@
-- This is Akshitha Karthick Kumar aka ASH
-- 
+- This is Akshitha Karthick Kumar
+
 
 
